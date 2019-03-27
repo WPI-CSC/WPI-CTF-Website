@@ -5,8 +5,37 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>WPICTF 2019</title>
         <link href="http://fonts.googleapis.com/css?family=Capriola" rel="stylesheet" type="text/css">
+        <link href="https://fonts.googleapis.com/css?family=Roboto+Mono" rel="stylesheet">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/css/materialize.min.css">
         <link rel="stylesheet" type="text/css" href="css/style.css">
+        <!--Oh my some javascript, how horrible-->
+        <script>
+        function openTab(tabName) {
+            console.log(tabName)
+            document.getElementById("WPI-Tab").style.display = "none"
+            document.getElementById("Global-Tab").style.display = "none"
+            document.getElementById("Other-Tab").style.display = "none"
+            document.getElementById(tabName).style.display = "block"
+        }
+        document.addEventListener('keydown', (event) => {
+            /* Yes this is technically a keylogger */
+            /* No we don't use it to track what you do, we only use it for switching tabs */
+            /* Yes we console log out the characters to freak you out */
+            /* Lol stop being paranoid */
+            const keyName = event.key;
+            console.log(keyName)
+            if (keyName === 'w' || keyName === "W") {
+                openTab("WPI-Tab")
+            }
+            if (keyName === 'g' || keyName === "G") {
+                openTab("Global-Tab")
+            }
+            if (keyName === 'o' || keyName === "O") {
+                openTab("Other-Tab")
+            }
+        }, false);
+
+        </script>
     </head>
 
     <body>
@@ -24,17 +53,16 @@
                 <div class="term card-panel green">
                     <h5 class="center"><a class="white-text center" href="https://ctf.wpictf.xyz"><b>Our Challenges (Coming Soon!)</b></a></h5>
                 </div>
-                </div>
+            </div>
 <!--                <div class="col s5">
                     <div class="term card-panel green">
                         <h5 class="center"><a class="white-text center" href="https://ctftime.org/event/600/tasks/"><b>Solutions and Writeups (Last year) </b></a></h5>
                     </div>
                 </div>
--->                
-            </div>
+-->
             <div class="row">
                 <!-- Terminal -->
-                <div class="col s10 offset-s1">
+                <div class="col s10 l8 offset-s1 offset-l2">
                     <div class="term card-panel black">
                         <span class="green-text">
                             <font size="+1">
@@ -50,7 +78,7 @@
 
 
                             <font size="+1">
-                                        root@wpictf:~# WHERE<br>
+                            root@wpictf:~# WHERE<br>
                             </font>
                             &emsp; <b>Online or SL104<br>
                             &emsp; <a href="https://ctf.wpictf.xyz">https://ctf.wpictf.xyz</a></b><br>
@@ -58,20 +86,49 @@
                             <font size="+1">
                                         root@wpictf:~# PRIZES<br>
                             </font>
-                            &emsp; <b>WPI Students Prizes:</b>
-					First: $100 Amazon Gift Card.
-					Second: $75 Amazon Gift Card.
-					Third: $50 Amazon Gift Card.
-					Fourth: $50 Amazon Gift Card.
-					<br>
-                            &emsp; <b>Global Prizes:</b>
-					First: Lenovo T440 Thinkpad.
-					Second: Samsung Galaxy Tab A.
-					Third: Bus Pirate v3.6a.
-					<br>
-                            &emsp; First team to complete every challenge in a given category gets a catagory-themed prize.<br>
-                            &emsp; You can win more than 1 prize! There are some "hidden" prizes as well.<br>
-                            &emsp; Prizes subject to change.<br>
+                            <span class="tab_bar"><b>
+                                    &nbsp&nbsp&nbsp
+                                    <a onclick="openTab('WPI-Tab')" class="tab_text"><span style="color: red">
+                                    W</span>PI Students Prizes</a>
+                                    &nbsp|&nbsp&nbsp&nbsp
+                                    <a onclick="openTab('Global-Tab')" class="tab_text"><span style="color: red">
+                                    G</span>lobal Prizes</a>
+                                    &nbsp|&nbsp&nbsp&nbsp
+                                    <a onclick="openTab('Other-Tab')" class="tab_text"><span style="color: red">
+                                    O</span>ther Info</a>
+                                    &nbsp&nbsp&nbsp
+                                    </b>
+                            </span>
+                            <span class="ncurses_blue_bg" id="WPI-Tab">
+                                <!--60 chars per line-->
+                                <pre>                                                             </pre><br>
+                                <pre>  First: $100 Amazon Gift Card.                              </pre><br>
+                                <pre>  Second: $75 Amazon Gift Card.                              </pre><br>
+                                <pre>  Third: $50 Amazon Gift Card.                               </pre><br>
+                                <pre>  Fourth: $50 Amazon Gift Card.                              </pre><br>
+                                <pre>                                                             </pre><br>
+                                <pre>                                                             </pre><br>
+                            </span>
+                            <span class="ncurses_blue_bg" id="Global-Tab" style="display: none">
+                                <!--60 chars per line-->
+                                <pre>                                                             </pre><br>
+                                <pre>  First: Lenovo T440 Thinkpad.                               </pre><br>
+                                <pre>  Second: Samsung Galaxy Tab A.                              </pre><br>
+                                <pre>  Third: Bus Pirate v3.6a.                                   </pre><br>
+                                <pre>                                                             </pre><br>
+                                <pre>                                                             </pre><br>
+                                <pre>                                                             </pre><br>
+                            </span>
+                            <span class="ncurses_blue_bg" id="Other-Tab" style="display:none">
+                                <!--60 chars per line-->
+                                <pre>                                                             </pre><br>
+                                <pre>  First team to complete every challenge in a given category </pre><br>
+                                <pre>  gets a category-theamed prize.                             </pre><br>
+                                <pre>  You can win more than 1 prize!                             </pre><br>
+                                <pre>  There are some hidden prizes as well.                      </pre><br>
+                                <pre>  Prizes subject to change                                   </pre><br>
+                                <pre>                                                             </pre><br>
+                            </span>
                         </span>
                     </div>
                 </div>
