@@ -9,23 +9,6 @@
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/css/materialize.min.css">
         <link rel="stylesheet" type="text/css" href="css/style.css">
         <!--Oh my some javascript, how horrible-->
-	<script>
-		var countDownDate = new Date(1555102800 * 1000).getTime();
-		var x = setInterval(function() {
-		  var now = new Date().getTime();
-		  var distance = countDownDate - now;
-		  var days = Math.floor(distance / (1000 * 60 * 60 * 24));
-		  var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
-		  var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
-		  var seconds = Math.floor((distance % (1000 * 60)) / 1000);
-		  document.getElementById("countdown").innerHTML = days + "d " + hours + "h "
-		  + minutes + "m " + seconds + "s ";
-		  if (distance < 0) {
-		    clearInterval(x);
-		    document.getElementById("countdown").innerHTML = "GO GO GO";
-		  }
-		}, 1000);
-	</script>
         <script>
         function openTab(tabName) {
             console.log(tabName)
@@ -68,13 +51,7 @@
             <div class="row">
                 <div class="col s10 offset-s1">
                 <div class="term card-panel green">
-                    <h5 class="center"><a class="white-text center" href="https://ctf.wpictf.xyz"><b>Preregister your team!</b></a></h5>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col s10 offset-s1">
-                <div class="term card-panel red">
-                    <h5 class="center"><p id="countdown">Countdown Here.</p></h5>
+                    <h5 class="center"><a class="white-text center" href="https://ctf.wpictf.xyz"><b>Go play!</b></a></h5>
                 </div>
             </div>
 <!--                <div class="col s5">
