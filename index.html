@@ -8,34 +8,6 @@
         <link href="https://fonts.googleapis.com/css?family=Roboto+Mono" rel="stylesheet">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/css/materialize.min.css">
         <link rel="stylesheet" type="text/css" href="css/style.css">
-        <!--Oh my some javascript, how horrible-->
-        <script>
-        function openTab(tabName) {
-            console.log(tabName)
-            document.getElementById("WPI-Tab").style.display = "none"
-            document.getElementById("Global-Tab").style.display = "none"
-            document.getElementById("Other-Tab").style.display = "none"
-            document.getElementById(tabName).style.display = "block"
-        }
-        document.addEventListener('keydown', (event) => {
-            /* Yes this is technically a keylogger */
-            /* No we don't use it to track what you do, we only use it for switching tabs */
-            /* Yes we console log out the characters to freak you out */
-            /* Lol stop being paranoid */
-            const keyName = event.key;
-            console.log(keyName)
-            if (keyName === 'w' || keyName === "W") {
-                openTab("WPI-Tab")
-            }
-            if (keyName === 'g' || keyName === "G") {
-                openTab("Global-Tab")
-            }
-            if (keyName === 'o' || keyName === "O") {
-                openTab("Other-Tab")
-            }
-        }, false);
-
-        </script>
     </head>
 
     <body>
@@ -51,7 +23,7 @@
             <div class="row">
                 <div class="col s10 offset-s1">
                 <div class="term card-panel green">
-                    <h5 class="center"><a class="white-text center" href="https://ctf.wpictf.xyz"><b>Go play!</b></a></h5>
+                    <h5 class="center"><a class="white-text center" href="https://ctf.wpictf.xyz"><b>Is over. We will announce prizes soon!</b></a></h5>
                 </div>
             </div>
 <!--                <div class="col s5">
