@@ -18,5 +18,6 @@ Themed prizes:
 	Linux:		/dev/base
 	Reversing:	Armia Prezesa
 	Hardware:	c0r3dump
+	Crypto:		Armia Prezesa
 
 Presidential prize:	WreckTheLine
