@@ -1,0 +1,22 @@
+Global:
+	1st place: WreckTheLine
+	2nd place: Armia Prezesa
+	3rd place: c0r3dump
+
+WPI:
+	1st place: Thaumaturgy
+	2nd place: I'd just like to interject for a moment.
+	3rd place: hi
+	4th place: Roomba
+
+Themed prizes:
+	Web:		stackola
+	Pwn:		WreckTheLine
+	Recon:		sebastianpc
+	Intro:		ωhατεvεr
+	Misc:		Armia Prezesa
+	Linux:		/dev/base
+	Reversing:	Armia Prezesa
+	Hardware:	c0r3dump
+
+Presidential prize:	WreckTheLine
