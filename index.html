@@ -8,6 +8,23 @@
         <link href="https://fonts.googleapis.com/css?family=Roboto+Mono" rel="stylesheet">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/css/materialize.min.css">
         <link rel="stylesheet" type="text/css" href="css/style.css">
+	<script>
+		var countDownDate = new Date(1587157200 * 1000).getTime();
+		var x = setInterval(function() {
+		  var now = new Date().getTime();
+		  var distance = countDownDate - now;
+		  var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+		  var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+		  var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+		  var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+		  document.getElementById("countdown").innerHTML = days + "d " + hours + "h "
+		  + minutes + "m " + seconds + "s ";
+		  if (distance < 0) {
+		    clearInterval(x);
+		    document.getElementById("countdown").innerHTML = "GO GO GO";
+		  }
+		}, 1000);
+	</script>
     </head>
 
     <body>
@@ -29,6 +46,7 @@
                             root@wpictf~# WHEN<br>
                             </font>
                             &emsp; <b>April 17th 5pm to 19th 5pm EDT (9PM UTC)</b><br>
+				&emsp; <b id="countdown">Countdown Here.</b><br>
 
                             <font size="+1">
                             root@wpictf~# WHO<br>
