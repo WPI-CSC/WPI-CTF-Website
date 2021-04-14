@@ -1,60 +1,61 @@
 <html>
 
-    <head>
-        <meta charset="utf-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>WPICTF 2021</title>
-        <link href="https://fonts.googleapis.com/css?family=Capriola" rel="stylesheet" type="text/css">
-        <link href="https://fonts.googleapis.com/css?family=Roboto+Mono" rel="stylesheet">
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/css/materialize.min.css">
-        <link rel="stylesheet" type="text/css" href="css/style.css">
-	<script>
-		var countDownDate = new Date(1619200800 * 1000).getTime();
-		var x = setInterval(function() {
-		  var now = new Date().getTime();
-		  var distance = countDownDate - now;
-		  var days = Math.floor(distance / (1000 * 60 * 60 * 24));
-		  var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
-		  var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
-		  var seconds = Math.floor((distance % (1000 * 60)) / 1000);
-		  document.getElementById("countdown").innerHTML = days + "d " + hours + "h "
-		  + minutes + "m " + seconds + "s ";
-		  if (distance < 0) {
-		    clearInterval(x);
-		    document.getElementById("countdown").innerHTML = "GO PLAY @ <a href=\"https://ctf.wpictf.xyz\">ctf.wpictf.xyz</a>";
-		  }
-		}, 1000);
-	</script>
-    </head>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WPICTF 2021</title>
+    <link href="https://fonts.googleapis.com/css?family=Capriola" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto+Mono" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/css/materialize.min.css">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <script>
+        var countDownDate = new Date(1619200800 * 1000).getTime();
+        var x = setInterval(function () {
+            var now = new Date().getTime();
+            var distance = countDownDate - now;
+            var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+            var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+            var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+            var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+            document.getElementById("countdown").innerHTML = days + "d " + hours + "h "
+                + minutes + "m " + seconds + "s ";
+            if (distance < 0) {
+                clearInterval(x);
+                document.getElementById("countdown").innerHTML = "GO PLAY @ <a href=\"https://ctf.wpictf.xyz\">ctf.wpictf.xyz</a>";
+            }
+        }, 1000);
+    </script>
+</head>
 
-    <body>
-        <nav class="nav-wraper indigo">
-            <div class="col 12 brand-logo center">
-                <b>WPI CTF 2021</b>
-            </div>
-        </nav>
-        <div class="indigo lighten-1" style="height: 40px; display: flex; color: rgb(255, 255, 255); width: 100%; align-items: center; justify-content: center;">
-            Hosted by WPI Cyber Security Club
+<body>
+<nav class="nav-wraper indigo">
+    <div class="col 12 brand-logo center">
+        <b>WPI CTF 2021</b>
+    </div>
+</nav>
+<div class="indigo lighten-1"
+     style="height: 40px; display: flex; color: rgb(255, 255, 255); width: 100%; align-items: center; justify-content: center;">
+    Hosted by WPI Cyber Security Club
+</div>
+<div class="content">
+    <!--            <div class="row">
+                    <div class="col s10 l8 offset-s1 offset-l2">
+                    <div class="term card-panel red flashing">
+                        <h5 class="center"><a class="white-text center" href="https://ctf.wpictf.xyz"><b>GO GO GO @ ctf.wpictf.xyz</b></a></h5> -->
+    <!--<h5 class="center"><a class="white-text center" href="https://ctf.wpictf.xyz"><b>CTF is done. Will announce WPI specific winners soon.</b></a></h5>
+</div>
+</div>-->
+    <!--<div class="row">
+        <div class="col s10 l8 offset-s1 offset-l2">
+        <div class="term card-panel green">
+            <h5 class="center"><a class="white-text center" href="winners2020.txt"><b>Winners!</b></a></h5>
         </div>
-        <div class="content">
-<!--            <div class="row">
-                <div class="col s10 l8 offset-s1 offset-l2">
-                <div class="term card-panel red flashing">
-                    <h5 class="center"><a class="white-text center" href="https://ctf.wpictf.xyz"><b>GO GO GO @ ctf.wpictf.xyz</b></a></h5> -->
-                    <!--<h5 class="center"><a class="white-text center" href="https://ctf.wpictf.xyz"><b>CTF is done. Will announce WPI specific winners soon.</b></a></h5>
-                </div>
-            </div>-->
-            <!--<div class="row">
-                <div class="col s10 l8 offset-s1 offset-l2">
-                <div class="term card-panel green">
-                    <h5 class="center"><a class="white-text center" href="winners2020.txt"><b>Winners!</b></a></h5>
-                </div>
-            </div>-->
+    </div>-->
 
-            <div class="row">
-                <!-- Terminal -->
-                <div class="col s10 l8 offset-s1 offset-l2">
-                    <div class="term card-panel black">
+    <div class="row">
+        <!-- Terminal -->
+        <div class="col s10 l8 offset-s1 offset-l2">
+            <div class="term card-panel black">
                         <span class="green-text">
                             <font size="+1">
                             root@wpictf~# WHEN<br>
@@ -83,31 +84,31 @@
                             </font>
                             &emsp; <a href="https://ctftime.org/event/1208">https://ctftime.org/event/1208</a></b><br>
                         </span>
-                    </div>
-                </div>
             </div>
+        </div>
+    </div>
 
-	<!-- last years sponsor, we will see if they will sponsor again this year.
+    <!-- last years sponsor, we will see if they will sponsor again this year.
             <div class="row">
                 <div class="col s10 offset-s1">
-		<a href='https://siegetechnologies.com'>
+        <a href='https://siegetechnologies.com'>
                     <div id="siege" class="term card-panel center">
                         <h5 class="white-text" style="font-family: 'Roboto', sans-serif">Sponsored by: </h5><br>
                             <img style="max-width: 400px; width: 75%;"src="siegelogo.png">
                     </div>
-		</a>
+        </a>
                 </div>
             </div>
-	-->
-        <div class="row">
-            <!-- Image -->
-            <div class="col s12 m4 offset-m1">
-                <svg xmlns="http://www.w3.org/2000/svg"
-                    height="100%" width="100%" preserveAspectRatio="xMidYMin"
-                    viewBox="0 0 849 1473">
-                    <path id="Unnamed"
-                    fill="none" stroke="black" stroke-width="1"
-                    d="M 392.50,53.50
+    -->
+    <div class="row">
+        <!-- Image -->
+        <div class="col s12 m4 offset-m1">
+            <svg xmlns="http://www.w3.org/2000/svg"
+                 height="100%" width="100%" preserveAspectRatio="xMidYMin"
+                 viewBox="0 0 849 1473">
+                <path id="Unnamed"
+                      fill="none" stroke="black" stroke-width="1"
+                      d="M 392.50,53.50
                     C 392.50,53.50 396.50,49.00 407.00,54.00
                     417.50,59.00 432.50,66.00 438.50,72.00
                     444.50,78.00 475.50,110.50 479.50,120.00
@@ -349,108 +350,114 @@
                     396.00,360.00 393.50,362.00 392.25,361.25
                     391.00,360.50 387.75,359.50 388.75,356.25 Z
                     M 390.00,348.25
-                    C 390.00,348.25 393.00,348.00 393.00,348.00" />
-                </svg>
+                    C 390.00,348.25 393.00,348.00 393.00,348.00"/>
+            </svg>
 
-            </div>
-                <!-- Info -->
-                <div class="col s12 m6">
-                    <div class="card-panel grey lighten-1">
-                        <h5>What is a CTF?</h5>
-                            Capture The Flag: A competition where you try to solve
-                            puzzles or break into systems to get a flag (some text)
-                            which earns you points.<br>
-                            <br>
-                        <h5>Why should I do it?</h5>
-                            With the ever increasing growth in computer science,
-                            software protection has become an important part
-                            of any software engineering position.<br>
-                            Going to CTFs can help you think like an attacker, and
-                            teach you how to avoid having security
-                            vulnerabilties in your code. And also it's hecka fun!<br>
-                            <br>
-                        <h5>What if I don't know anything?</h5>
-                            CTF's can feel intimidating, but that's precisely
-                            why you should go to them, so that you can go from
-                            knowing nothing to something. There will be people
-                            onsite to help push you the right direction. And
-                            on top of that, we have beginner friendly challenges!
-                            Getting a flag could be as easy as inspecting a web
-                            page! <br>
-                            <br>
-                            <!-- If you are looking for a WPI{FLAG}, you CANT be a robot! -->
-                        <h5> What's Unique about WPICTF?</h5>
-                            We have onsite physical devices that you can try
-                            hack into.<br>
-                            We are <b>beginner friendly</b>. Most challenges
-                            were made by WPI students, so they are designed from
-                            being extremely easy to moderately difficult.<br>
-                            <br>
-                        <h5>Questions?</h5>
-                        Email csc-exec <span>AT</span> wpi <span>DOT edu</span><br>
-                        Or join the <a href="https://discord.gg/C7GUsdV"> discord</a>
-                    </div>
-                </div>
-            </div>
-	    
-	    <div class="row">
-		  <div class="col s10 offset-s1 offset-l2">
-			  <h5 class="center">Sponsors</h5>
-		   </div>
-	    </div>
-	    
-	    <div class="row">
-		    <div class="col s5 offset-s1">
-			    <a href="https://www.vmray.com"><img src="VMRay_Main_Logo.png"></a>
-		    </div>
-		    <div class="col s5">
-			    <a href="https://www.wpi.edu/academics/departments/computer-science"><img src="WPI_Inst_Prim_FulClr.png"></a>
-		    </div>
-	    </div>
-
-            <div class="row">
-                <div class="col s5 offset-s1">
-                <div class="term card-panel green">
-                    <h5 class="center"><a class="white-text center" href="winners2020.txt"><b>2020 Winners!</b></a></h5>
-                </div>
-		</div>
-                <div class="col s5">
-                    <div class="term card-panel green">
-                        <h5 class="center"><a class="white-text center" href="https://ctftime.org/event/913/tasks/"><b>Solutions and Writeups (2020)</b></a></h5>
-                    </div>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col s5 offset-s1">
-                <div class="term card-panel green">
-                    <h5 class="center"><a class="white-text center" href="winners2019.txt"><b>2019 Winners!</b></a></h5>
-                </div>
-		</div>
-                <div class="col s5">
-                    <div class="term card-panel green">
-                        <h5 class="center"><a class="white-text center" href="https://ctftime.org/event/728/tasks/"><b>Solutions and Writeups (2019)</b></a></h5>
-                    </div>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col s5 offset-s1">
-                <div class="term card-panel green">
-                    <h5 class="center"><a class="white-text center" href="https://ctftime.org/event/600"><b>2018 Winners!</b></a></h5>
-                </div>
-		</div>
-                <div class="col s5">
-                    <div class="term card-panel green">
-                        <h5 class="center"><a class="white-text center" href="https://ctftime.org/event/600/tasks/"><b>Solutions and Writeups (2018) </b></a></h5>
-                    </div>
-                </div>
+        </div>
+        <!-- Info -->
+        <div class="col s12 m6">
+            <div class="card-panel grey lighten-1">
+                <h5>What is a CTF?</h5>
+                Capture The Flag: A competition where you try to solve
+                puzzles or break into systems to get a flag (some text)
+                which earns you points.<br>
+                <br>
+                <h5>Why should I do it?</h5>
+                With the ever increasing growth in computer science,
+                software protection has become an important part
+                of any software engineering position.<br>
+                Going to CTFs can help you think like an attacker, and
+                teach you how to avoid having security
+                vulnerabilties in your code. And also it's hecka fun!<br>
+                <br>
+                <h5>What if I don't know anything?</h5>
+                CTF's can feel intimidating, but that's precisely
+                why you should go to them, so that you can go from
+                knowing nothing to something. There will be people
+                onsite to help push you the right direction. And
+                on top of that, we have beginner friendly challenges!
+                Getting a flag could be as easy as inspecting a web
+                page! <br>
+                <br>
+                <!-- If you are looking for a WPI{FLAG}, you CANT be a robot! -->
+                <h5> What's Unique about WPICTF?</h5>
+                We have onsite physical devices that you can try
+                hack into.<br>
+                We are <b>beginner friendly</b>. Most challenges
+                were made by WPI students, so they are designed from
+                being extremely easy to moderately difficult.<br>
+                <br>
+                <h5>Questions?</h5>
+                Email csc-exec <span>AT</span> wpi <span>DOT edu</span><br>
+                Or join the <a href="https://discord.gg/C7GUsdV"> discord</a>
             </div>
         </div>
+    </div>
 
-    </body>
-    <footer>
-        <div class="indigo lighten-1" style="height: 30px; display: flex; color: rgb(255, 255, 255); width: 100%; align-items: center; justify-content: center;">
-            Website made by Binam Kayastha & Alex Gaines
-		<img style="max-width: 1px; width: 1px;"src="eggy.jpg">
+    <div class="row">
+        <div class="col s10 m6 offset-m3">
+            <h3 class="center">Sponsors</h3>
         </div>
-    </footer>
+    </div>
+
+    <div class="row">
+        <div class="col s5 offset-s1 center-align">
+            <a href="https://www.vmray.com"><img src="VMRay_Main_Logo.png"></a>
+        </div>
+        <div class="col s5 center-align">
+            <a href="https://www.wpi.edu/academics/departments/computer-science"><img
+                    src="WPI_Inst_Prim_FulClr.png" height="300px" width="auto"></a>
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="col s5 offset-s1">
+            <div class="term card-panel green">
+                <h5 class="center"><a class="white-text center" href="winners2020.txt"><b>2020 Winners!</b></a></h5>
+            </div>
+        </div>
+        <div class="col s5">
+            <div class="term card-panel green">
+                <h5 class="center"><a class="white-text center" href="https://ctftime.org/event/913/tasks/"><b>Solutions
+                    and Writeups (2020)</b></a></h5>
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col s5 offset-s1">
+            <div class="term card-panel green">
+                <h5 class="center"><a class="white-text center" href="winners2019.txt"><b>2019 Winners!</b></a></h5>
+            </div>
+        </div>
+        <div class="col s5">
+            <div class="term card-panel green">
+                <h5 class="center"><a class="white-text center" href="https://ctftime.org/event/728/tasks/"><b>Solutions
+                    and Writeups (2019)</b></a></h5>
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col s5 offset-s1">
+            <div class="term card-panel green">
+                <h5 class="center"><a class="white-text center" href="https://ctftime.org/event/600"><b>2018
+                    Winners!</b></a></h5>
+            </div>
+        </div>
+        <div class="col s5">
+            <div class="term card-panel green">
+                <h5 class="center"><a class="white-text center" href="https://ctftime.org/event/600/tasks/"><b>Solutions
+                    and Writeups (2018) </b></a></h5>
+            </div>
+        </div>
+    </div>
+</div>
+
+</body>
+<footer>
+    <div class="indigo lighten-1"
+         style="height: 30px; display: flex; color: rgb(255, 255, 255); width: 100%; align-items: center; justify-content: center;">
+        Website made by Binam Kayastha & Alex Gaines
+        <img style="max-width: 1px; width: 1px;" src="eggy.jpg">
+    </div>
+</footer>
 </html>
